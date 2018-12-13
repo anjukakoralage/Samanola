@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Samanola</string>
+
+    <!--Home Button name-->
+    <string name="sinhala">සිංහල</string>
+    <string name="tamil">தமிழ்</string>
+    <string name="english">English</string>
+
+    <!--Home Text content-->
+    <string name="home_content">කරුණාකර භාෂාව තෝරන්න</string>
+
+    <!--Info Text content-->
+    <string name="info_title">කරුණාකර ඔබගේ විස්තර ඇතුලත් කරන්න</string>
+
+    <!--Info Text content-->
+    <string name="info_name">නම:</string>
+    <string name="info_mobi">දුරකථන අංක:</string>
+    <string name="info_mail">විද්යුත් තැපෑල:</string>
+
+    <string name="info_send">යොමු කරන්න</string>
+
+    <!--Thank Text content-->
+    <string name="thank">ඔබට ස්තුතියි</string>
+
+</resources>

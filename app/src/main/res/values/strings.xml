@@ -1,3 +1,25 @@
 <resources>
-    <string name="app_name">Samanola</string>
+    <string name="app_name" translatable="false">Samanola</string>
+
+    <!--Home Button name-->
+    <string name="sinhala" translatable="false">සිංහල</string>
+    <string name="tamil" translatable="false">தமிழ்</string>
+    <string name="english" translatable="false">English</string>
+
+    <!--Home Text content-->
+    <string name="home_content">Please select a language</string>
+
+    <!--Info Title content-->
+    <string name="info_title">Please enter your details bellow</string>
+
+    <!--Info Text content-->
+    <string name="info_name">Name:</string>
+    <string name="info_mobi">Mobile No:</string>
+    <string name="info_mail">E-mail:</string>
+
+    <string name="info_send">Submite</string>
+
+    <!--Thank Text content-->
+    <string name="thank">Thank you</string>
+
 </resources>

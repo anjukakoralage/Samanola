@@ -11,51 +11,24 @@ import android.widget.Button;
 
 import java.util.Locale;
 
-public class MainActivity extends AppCompatActivity {
+public class InformationGetActivity extends AppCompatActivity {
 
-    Button btnSinhala, btnTamil, btnEnglish;
+    Button btnSubmite;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         loadLocale();
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_information_get);
 
-        btnSinhala = (Button) findViewById(R.id.btnSinhala);
-        btnTamil = (Button) findViewById(R.id.btnTamil);
-        btnEnglish = (Button) findViewById(R.id.btnEnglish);
-
-
-        btnSinhala.setOnClickListener(new View.OnClickListener() {
+        btnSubmite = (Button) findViewById(R.id.btnSubmite);
+        btnSubmite.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                 setLocale("si");
-                // recreate();
-                Intent intent = new Intent(getApplicationContext(), InformationGetActivity.class);
+                Intent intent = new Intent(getApplicationContext(),ThankActivty.class);
                 startActivity(intent);
             }
         });
-
-        btnEnglish.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                setLocale("en");
-                //recreate();
-                Intent intent = new Intent(getApplicationContext(), InformationGetActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        btnTamil.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                setLocale("ta");
-                //recreate();
-                Intent intent = new Intent(getApplicationContext(), InformationGetActivity.class);
-                startActivity(intent);
-            }
-        });
-
     }
 
     private void setLocale(String lang) {
@@ -69,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         editor.putString("My_Lang", lang);
         editor.apply();
     }
+
 
     //get language from preference
     public void loadLocale(){
