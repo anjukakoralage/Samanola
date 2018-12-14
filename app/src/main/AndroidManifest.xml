@@ -28,8 +28,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".InformationGetActivity" />
-        <activity android:name=".ThankActivty"></activity>
+        <activity
+            android:name=".InformationGetActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".ThankActivty" />
+        <activity android:name=".PladgeActivity"></activity>
     </application>
 
 </manifest>

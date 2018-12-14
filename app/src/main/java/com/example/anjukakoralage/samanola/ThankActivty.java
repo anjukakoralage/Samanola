@@ -1,11 +1,13 @@
 package com.example.anjukakoralage.samanola;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-
+import android.view.View;
+import android.widget.ImageView;
 import java.util.Locale;
 
 public class ThankActivty extends AppCompatActivity {
@@ -15,6 +17,21 @@ public class ThankActivty extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         loadLocale();
         setContentView(R.layout.activity_thank_activty);
+
+        Thread myThread = new Thread(){
+            @Override
+            public void run() {
+                try {
+                    sleep(6000);
+                    Intent intent = new Intent(getApplicationContext(),  MainActivity.class);
+                    startActivity( intent);
+                    finish();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        };
+        myThread.start();
     }
 
     private void setLocale(String lang) {
