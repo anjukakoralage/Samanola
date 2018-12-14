@@ -8,12 +8,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.ViewFlipper;
 
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
     Button btnSinhala, btnTamil, btnEnglish;
+    ViewFlipper v_flipper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +27,17 @@ public class MainActivity extends AppCompatActivity {
         btnSinhala = (Button) findViewById(R.id.btnSinhala);
         btnTamil = (Button) findViewById(R.id.btnTamil);
         btnEnglish = (Button) findViewById(R.id.btnEnglish);
+
+        int images[] = {R.drawable.one, R.drawable.two, R.drawable.three, R.drawable.four, R.drawable.five};
+
+        v_flipper = (ViewFlipper) findViewById(R.id.v_flipper);
+
+        for (int image: images){
+            flipperImages(image);
+        }
+
+
+
 
 
         btnSinhala.setOnClickListener(new View.OnClickListener() {
@@ -55,6 +69,18 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+    }
+
+    public void flipperImages(int image){
+        ImageView imageView = new ImageView(this);
+        imageView.setBackgroundResource(image);
+
+        v_flipper.addView(imageView);
+        v_flipper.setFlipInterval(10000);
+        v_flipper.setAutoStart(true);
+
+        v_flipper.setInAnimation(this, android.R.anim.fade_in);
 
     }
 
