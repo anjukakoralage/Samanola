@@ -27,5 +27,8 @@
 கழிவுப்பொருட்களை வெளியேற்றாமல் இருக்கவும், எதிர்கால தலைமுறையினருக்கு
 சிவனொளிபாதத்தின் மரபுவழி தளத்தை பாதுகாப்பதற்கும் உறுதியளித்தேன்.</string>
 
+    <!-- URL Head -->
+    <string name="url_head_string">https://pledge.savesripada.lk/</string>
+
 
 </resources>

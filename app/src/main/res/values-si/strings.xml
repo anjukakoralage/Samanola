@@ -27,5 +27,8 @@
     <string name="text_pladge">සිරි පා වන්දනාවේ යෙදෙන මම ප්ලාස්ටික්, පොලිතින් හා ඝන අප ද්‍රව්‍ය  සමනොළ අඩවියට අවිධිමත් ව බැහැර නොකරමි.
 එවසේම මතු පරපුර උවදසා සමනොළ අසිරි සුරැකීමට දායක වන බවද මෙයින් ප්රිතිඥා දෙමි.</string>
 
+    <!-- URL Head -->
+    <string name="url_head_string">https://pledge.savesripada.lk/</string>
+
 
 </resources>

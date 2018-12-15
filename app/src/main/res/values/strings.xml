@@ -27,4 +27,7 @@
     <string name="text_pladge">I pledged to refrain from display disposing plastic, polythene and solid waste to Sri Pada site and also
 pledge to protect Sripada heritage site for our future generation.</string>
 
+    <!-- URL Head -->
+    <string name="url_head_string">https://pledge.savesripada.lk/</string>
+
 </resources>
